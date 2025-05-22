@@ -1,14 +1,45 @@
 .flex-container {
   display: flex;
-  background-color: #f1f1f1;
+  border: black solid 4px;
 }
 
-.flex-container > div {
-  background-color: dodgerblue;
-  color: white;
-  width: 200px;
-  margin: 200px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+.flex-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.poke-item,
+.digi-item,
+.pal-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border: black solid 4px;
+  min-width: 201px;
+}
+
+.poke-item img,
+.digi-item img,
+.pal-item img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.flex-item span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+header nav a,
+footer nav a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+header nav a:hover,
+footer nav a:hover {
+  color: #005fa3;
 }
